@@ -1,3 +1,6 @@
 streamlit
 scikit-learn
 numpy
+transformers
+tensorflow
+tf-keras
