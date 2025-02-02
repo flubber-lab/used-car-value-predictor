@@ -4,6 +4,7 @@
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Podman](https://img.shields.io/badge/Podman-892CA0?style=for-the-badge&logo=podman&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Weights & Biases](https://img.shields.io/badge/Weights%20%26%20Biases-FFCC33?style=for-the-badge&logo=weightsandbiases&logoColor=black)
 
 An **AI-powered Streamlit app** that predicts **used car prices** and recommends **cars based on your budget**. It uses **Machine Learning (ML)** for price prediction and an interactive chatbot for car recommendations.
 
@@ -14,6 +15,7 @@ An **AI-powered Streamlit app** that predicts **used car prices** and recommends
 ✅ **Find the Best Car** within your budget  
 ✅ **Interactive Chatbot** for personalized recommendations  
 ✅ **Deployed using Podman on AWS EC2**  
+✅ **Weights & Biases for Experiment Tracking**  
 ✅ **Elegant UI** with a modern design  
 
 ---
@@ -27,6 +29,7 @@ An **AI-powered Streamlit app** that predicts **used car prices** and recommends
 │── requirements.txt     # Python dependencies
 │── Dockerfile           # Container setup
 │── cars_data.csv        # Car dataset
+│── wandb_integration.py # Weights & Biases tracking
 │── README.md            # Project documentation
 ```
 
@@ -44,7 +47,12 @@ cd car-app
 pip install -r requirements.txt
 ```
 
-### **3️⃣ Run the Streamlit App**
+### **3️⃣ Set Up Weights & Biases**
+```bash
+wandb login
+```
+
+### **4️⃣ Run the Streamlit App**
 ```bash
 streamlit run app.py
 ```
@@ -102,6 +110,7 @@ http://your-ec2-ip:8501
 - **Frontend**: Streamlit 🎨  
 - **Machine Learning**: Scikit-Learn, Transformers 🤖  
 - **Backend**: Python, Pandas, NumPy 🐖  
+- **Experiment Tracking**: Weights & Biases 📊  
 - **Deployment**: Podman, AWS EC2 ☁️  
 
 ---
@@ -133,13 +142,5 @@ This project is **open-source** and available under the **MIT License**.
 
 ---
 
-## 💡 **Future Enhancements**
-- [ ] Add **more ML models** for better accuracy  
-- [ ] Implement **user authentication**  
-- [ ] Deploy using **AWS Fargate (serverless)**  
-- [ ] Add **Voice-enabled Chatbot** 🎤  
-
----
-
-🔥 **Star this repository** ⭐ if you found it useful!
+## 🔥 **Star this repository** ⭐ if you found it useful!
 
