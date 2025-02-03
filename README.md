@@ -124,7 +124,7 @@ This project is **open-source** and available under the **MIT License**.
 1. **Fork** the repository 🍔  
 2. **Clone** your forked repo:  
    ```bash
-   git clone https://github.com/your-username/car-app.git
+   git clone https://github.com/flubber-lab/used-car-value-predictor.git
    ```
 3. **Create a feature branch**:  
    ```bash
